@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #333
+  background: #333;
 }
 
 .container {
@@ -121,4 +121,44 @@ body {
   border-left: 1px solid #fff4;
   border-bottom: 1px solid #fff4;
   border-top: 1px solid #fff4;
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 40px 5px;
+  }
+
+  .calculadora {
+    max-width: 84%;
+  }
+
+  .calculadora span {
+    width: 60px;
+    height: 60px;
+    margin-left: 13px;
+  }
+
+  .calculadora span i {
+    font-size: 1em;
+  }
+  
+  .calculadora .limpar {
+    grid-column: span;
+    width: 136px;
+    background: #f00;
+  }
+
+  .calculadora .mais {
+    grid-row: span;
+    height: 136px;
+  }
+
+  .calculadora span::before {
+    top: 2px;
+    left: 2px;
+    bottom: 7px;
+    right: 6px;
+  }
 }
