@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="css/estilo.css">
   <title>Calculadora</title>
 </head>
 <body>
   <div class="container">
     <form action="" class="calculadora" name="calc">
       <input type="text" class="valor" readonly name="txt">
-      <span class="num" onclick="calc.txt.value = ''"><i>C</i></span>
+      <span class="num limpar" onclick="calc.txt.value = ''"><i>C</i></span>
       <span class="num" onclick="calc.txt.value += '/'"><i>/</i></span>
       <span class="num" onclick="calc.txt.value += '*'"><i>*</i></span>
       <span class="num" onclick="calc.txt.value += '7'"><i>7</i></span>
@@ -21,7 +21,7 @@
       <span class="num" onclick="calc.txt.value += '4'"><i>4</i></span>
       <span class="num" onclick="calc.txt.value += '5'"><i>5</i></span>
       <span class="num" onclick="calc.txt.value += '6'"><i>6</i></span>
-      <span class="num" onclick="calc.txt.value += '+'"><i>+</i></span>
+      <span class="num mais" onclick="calc.txt.value += '+'"><i>+</i></span>
       <span class="num" onclick="calc.txt.value += '1'"><i>1</i></span>
       <span class="num" onclick="calc.txt.value += '2'"><i>2</i></span>
       <span class="num" onclick="calc.txt.value += '3'"><i>3</i></span>
@@ -29,7 +29,7 @@
       <span class="num" onclick="calc.txt.value += '00'"><i>00</i></span>
       <span class="num" onclick="calc.txt.value += '.'"><i>.</i></span>
       
-      <span class="num" onclick="document.calc.txt.value = eval(calc.txt.value)"><i>=</i></span>
+      <span class="num igual" onclick="document.calc.txt.value = eval(calc.txt.value)"><i>=</i></span>
     </form>
   </div>
 </body>
